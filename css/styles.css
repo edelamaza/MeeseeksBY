@@ -25,7 +25,9 @@ body {
   font-family: Helvetica, sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
-  line-height: 1.7; }
+  line-height: 1.7;
+  margin: 0; 
+}
 
 .heading-primary {
     font-size: 6rem;
@@ -42,7 +44,6 @@ body {
     justify-content: space-between;
     position: fixed;
     background-color: black;
-
     
 }
 
@@ -100,4 +101,3 @@ body {
     border-radius: 50%;
     object-position: cover;
 }
-

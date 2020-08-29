@@ -40,6 +40,10 @@ body {
     font-size: 3rem;
 }
 
+.headding-quarternary {
+  font-size: 10rem;
+}
+
 .navigation {
     width: 100vw;
     display: flex ;
@@ -110,12 +114,14 @@ body {
   align-items: center;
   justify-content: center;
 
+
 }
 
 .section__solution--container {
   width: 70vw;
   height: 70vh;
   background-color: white;
+  display: flex;
 
 }
 
@@ -125,6 +131,13 @@ body {
 
 .asiento{
   width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   object-position: cover;
+}
+
+.sidebar {
+  background-color: rgb(230, 230, 230);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.322);
+  margin-right: 2rem;
 }

@@ -27,6 +27,8 @@ body {
   /*font-size: 16px;*/
   line-height: 1.7;
   margin: 0; 
+  background: linear-gradient(90deg, #64c8ee, #662f8f) ;
+
 }
 
 .heading-primary {
@@ -54,7 +56,6 @@ body {
 .section__hero {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(90deg, #64c8ee, #662f8f) ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,4 +101,20 @@ body {
     width: 10rem;
     border-radius: 50%;
     object-position: cover;
+}
+
+.section__solution {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.section__solution--container {
+  width: 70vw;
+  height: 70vh;
+  background-color: white;
+
 }

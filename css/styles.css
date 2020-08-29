@@ -1,0 +1,55 @@
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7; }
+
+.heading-primary {
+    font-size: 6rem;
+    color: white;
+}
+
+.heading-secondary {
+    font-size: 3rem;
+}
+
+.navigation {
+    display: flex ;
+    justify-content: space-between;
+    position: sticky;
+
+    
+}
+
+.logo {
+    width: 5rem;
+}
+
+.section__hero {
+    height: 100vh;
+    width: 100vw;
+    background-color: #64c8ee;
+}

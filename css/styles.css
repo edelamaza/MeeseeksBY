@@ -52,4 +52,37 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #64c8ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.section__hero--container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section__hero--card {
+    background-color: white;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    margin: 1rem;
+}
+
+.line {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+

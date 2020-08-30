@@ -130,15 +130,15 @@ body {
 }
 
 .asiento{
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   object-position: cover;
 }
 
 .asiento__fake {
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .top {

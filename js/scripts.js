@@ -6,6 +6,9 @@ const btnEnter = document.querySelector(".enter");
 const area = document.querySelector("#area");
 const asientoDisc = document.getElementById("34");
 const checkbox = document.getElementById("handicap");
+const asientoXElement = document.getElementById("asientoX");
+const asientoYElement = document.getElementById("asientoY");
+const pasilloXElement = document.getElementById("pasilloX");
 
 
 btnEnter.addEventListener("click", function(){
@@ -16,7 +19,11 @@ btnEnter.addEventListener("click", function(){
     dMin = getDistancia();
     let persons = document.getElementById("persons").textContent=capacidad;
     let discCheck = checkbox.checked
-    solucion(capacidad,dMin,discCheck)
+    asientoX = getAsientoX();
+    asientoY = getAsientoY();
+    pasilloX = getPasilloX();
+
+    solucion(capacidad,dMin,discCheck,asientoX,asientoY,passilloX)
 });
 
 function getCapacidad(){
@@ -31,6 +38,24 @@ function getDistancia(){
     let valorDist = document.getElementById("distancia").value;
     let dMin = parseInt(valorDist)
     return dMin
+}
+
+function getAsientoX(){
+    let valorAsientoX = document.getElementById("asientoX").value;
+    let asientoX = parseInt(valorAsientoX)
+    return asientoX
+}
+
+function getAsientoY(){
+    let valorAsientoY = document.getElementById("asientoY").value;
+    let asientoY = parseInt(valorAsientoY)
+    return asientoY
+}
+
+function getPasilloX(){
+    let valorpasilloX = document.getElementById("pasilloX").value;
+    let pasilloX = parseInt(valorpasilloX)
+    return pasilloX
 }
 
 function busquedaAsiento(xInicio,yInicio,xPos,yPos,asientos,dMin) {
@@ -56,15 +81,15 @@ function busquedaAsiento(xInicio,yInicio,xPos,yPos,asientos,dMin) {
     return nuevoAsiento
 }
 
-function solucion(capacidad, dMin, checked){
+function solucion(capacidad, dMin, checked,asientoX,asientoY,pasilloX){
     const xPos=[0,0,0,0,0,0,0,0,0,0,
-                40,40,40,40,40,40,40,40,40,
-                122,122,122,122,122,122,122,122,
-                162,162,162,162,162,162,162,162]
-    const yPos=[65, 0,-65,-130,-195,-260,-325,-390,-455,-520,
-                0,-65,-130,-195,-260,-325,-390,-455,-520,
-                0,-65,-130,-195,-260,-325,-390,-520,
-                0,-65,-130,-195,-260,-325,-390,-520]
+                1*asientoX,1*asientoX,1*asientoX,1*asientoX,1*asientoX,1*asientoX,1*asientoX,1*asientoX,1*asientoX,
+                2*asientoX+pasilloX,2*asientoX+pasilloX,2*asientoX+pasilloX,2*asientoX+pasilloX,2*asientoX+pasilloX,2*asientoX+pasilloX,2*asientoX+pasilloX,2*asientoX+pasilloX,
+                3*asientoX+pasilloX,3*asientoX+pasilloX,3*asientoX+pasilloX,3*asientoX+pasilloX,3*asientoX+pasilloX,3*asientoX+pasilloX,3*asientoX+pasilloX,3*asientoX+pasilloX]
+    const yPos=[1*asientoY,0*asientoY,-1*asientoY,-2*asientoY,-3*asientoY,-4*asientoY,-5*asientoY,-6*asientoY,-7*asientoY,-8*asientoY,
+                0*asientoY,-1*asientoY,-2*asientoY,-3*asientoY,-4*asientoY,-5*asientoY,-6*asientoY,-7*asientoY,-8*asientoY,
+                0*asientoY,-1*asientoY,-2*asientoY,-3*asientoY,-4*asientoY,-5*asientoY,-6*asientoY,-8*asientoY,
+                0*asientoY,-1*asientoY,-2*asientoY,-3*asientoY,-4*asientoY,-5*asientoY,-6*asientoY,-8*asientoY,]
     let asientos = []
     asientos.push(0);
     let cont = 0;

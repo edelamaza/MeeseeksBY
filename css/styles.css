@@ -40,8 +40,8 @@ body {
     font-size: 3rem;
 }
 
-.headding-quarternary {
-  font-size: 10rem;
+.heading-quarternary {
+  font-size: 1.5rem;
 }
 
 .navigation {
@@ -119,9 +119,9 @@ body {
 
 .section__solution--container {
   width: 70vw;
-  height: 70vh;
   background-color: white;
   display: flex;
+  flex-direction: column;
 
 }
 
@@ -136,8 +136,40 @@ body {
   object-position: cover;
 }
 
-.sidebar {
+.asiento__fake {
+  width: 10rem;
+  height: 10rem;
+}
+
+.top {
   background-color: rgb(230, 230, 230);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.322);
   margin-right: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
 }
+
+.seats__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.seats__left,
+.seats__right {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.seats__left--left,
+.seats__left--right,
+.seats__right--left,
+.seats__right--right {
+  display: flex;
+  flex-direction: column;
+}
+

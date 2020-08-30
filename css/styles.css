@@ -47,14 +47,16 @@ body {
 .navigation {
     width: 100vw;
     display: flex ;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     background-color: black;
+    height: 7rem;
     
 }
 
 .logo {
     width: 5rem;
+    padding: 2rem 0;
 }
 
 .section__hero {
@@ -134,11 +136,20 @@ body {
   height: 5rem;
   border-radius: 50%;
   object-position: cover;
+  margin-bottom: 1rem;
 }
 
 .asiento__fake {
   width: 5rem;
   height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.asiento__fake--p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #662f8f;
+
 }
 
 .top {
@@ -154,7 +165,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .seats__left,
@@ -171,5 +182,12 @@ body {
 .seats__right--right {
   display: flex;
   flex-direction: column;
+}
+
+.seats__left--right {
+  margin-right: 2rem;
+}
+.seats__right--left {
+  margin-left: 2rem;
 }
 

@@ -131,7 +131,8 @@ body {
   filter: grayscale(100%);
 }
 
-.asiento{
+.asiento,
+.asiento--conductor{
   width: 5rem;
   height: 5rem;
   border-radius: 50%;

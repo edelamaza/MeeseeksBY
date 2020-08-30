@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>Meeseeks Blue Yonder</title>
-  <meta name="description" content="Solucion Reto Blue Yonder">
+  <meta name="description" content="Blue Yonder Challenge Solution">
   <meta name="meeskeeks" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -24,33 +24,33 @@
 
     <section class="section__hero">
       <div class="section__hero--container">
-        <h1 class="heading-primary">Nuestra Solucion Al Reto Blue Yonder</h1>
-        <h2 class="heading-secondary">Equipo Meeseeks</h2>
+        <h1 class="heading-primary">Blue Yonder Challenge Solution</h1>
+        <h2 class="heading-secondary">Team Meeseeks</h2>
       </div>
       <div class="section__hero--container">
-        <h3 class="heading-tertiary">Nuestro Equipo:</h3>
+        <h3 class="heading-tertiary">Team Members:</h3>
         <div class="cards">
           <div class="section__hero--card">
             <h3>Esteban de la Maza</h3>
-            <p>ITC Tercer Semestre</p>
+            <p>ITC Third Semester</p>
             <div class="line"></div>
             <img class="face" src="img/esteban.jpg">
           </div>
           <div class="section__hero--card">
             <h3>Ricardo Jasso</h3>
-            <p>ITC Tercer Semestre</p>
+            <p>ITC Third Semester</p>
             <div class="line"></div>
             <img class="face" src="img/ricky.jpeg">
           </div>
           <div class="section__hero--card">
             <h3>Jorge Ayala</h3>
-            <p>ITC Tercer Semestre</p>
+            <p>ITC Third Semester</p>
             <div class="line"></div>
             <img class="face" src="img/jorgeA.jpeg">
           </div>
           <div class="section__hero--card">
             <h3>Jorge Villegas</h3>
-            <p>IRS Tercer Semestre</p>
+            <p>IRS Third Semester</p>
             <div class="line"></div>
             <img class="face" src="img/jorge.jpeg">
           </div>
@@ -64,14 +64,24 @@
       <div class="section__solution--container">
 
         <div class="top">
-          <h4 class="heading-quarternary">Porcentaje de Capacidad:</h4>
-          <input type="number"  id="porcentaje">
-          <h4 class="heading-quarternary">Distancia Minima</h4>
-          <input type="number"  id="distancia">
-          <button class="enter">Enter</button>
-        </div>
-        <div class="seats__container">
+          <div class="top__top">
+            <h4 class="heading-quarternary">Capacity Percentage:</h4>
+            <input type="number"  id="porcentaje">
+            <h4 class="heading-quarternary">%</h4>
+            <h4 class="heading-quarternary">Mimimum Distance:</h4>
+            <input type="number"  id="distancia">
+            <h4 class="heading-quarternary">cm</h4>
+          </div>
+          <div class="top__bottom">
+            <button class="enter">GO</button>
 
+          </div>
+        </div>
+        
+        <div class="seats__container">
+          <div class="leyenda">
+            <h4 class="heading-quarternary">Capacity: <span id="persons">&nbsp;</span></h4>  
+          </div>
           <div class="seats__left">
             <div class="seats__left--left">
               <input type="image" src="img/busseat.png" class="asiento" id="0">
@@ -87,7 +97,7 @@
             </div>
             <div class="seats__left--right">
               <div class="asiento__fake">
-                <p class="asiento__fake--p">Conductor</p>
+                <p class="asiento__fake--p">Driver</p>
               </div>
               <input type="image" src="img/busseat.png" class="asiento deleted" id="10">
               <input type="image" src="img/busseat.png" class="asiento deleted" id="11">
@@ -113,11 +123,12 @@
               <input type="image" src="img/busseat.png" class="asiento deleted" id="24">
               <input type="image" src="img/busseat.png" class="asiento deleted" id="25">
               <div class="asiento__fake"></div>
-              <input type="image" src="img/busseat.png" class="asiento deleted" id="26">
+              <input type="image" src="img/busseat.png" class="asiento deleted " id="26">
+
             </div>
             <div class="seats__right--right">
               <div class="asiento__fake">
-                <p class="asiento__fake--p">Puerta</p>
+                <p class="asiento__fake--p">Door</p>
               </div>
               <input type="image" src="img/busseat.png" class="asiento deleted" id="27">
               <input type="image" src="img/busseat.png" class="asiento deleted" id="28">
@@ -127,9 +138,10 @@
               <input type="image" src="img/busseat.png" class="asiento deleted" id="32">
               <input type="image" src="img/busseat.png" class="asiento deleted" id="33">
               <div class="asiento__fake">
-                <p class="asiento__fake--p">Puerta</p>
+                <p class="asiento__fake--p">Ramp</p>
               </div>
-              <input type="image" src="img/busseat.png" class="asiento deleted" id="34">
+                <input type="image" src="img/busseat.png" class="asiento deleted " id="34">
+
             </div>
             
           </div>

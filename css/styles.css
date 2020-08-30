@@ -91,6 +91,8 @@ body {
     margin: 1rem;
     transition: all .3s;
     align-items: center;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.459);
+
 }
 
 .section__hero--card:hover {
@@ -115,6 +117,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.459);
+
 
 
 }
@@ -124,12 +128,15 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
 
 }
 
 .deleted{
   filter: grayscale(100%);
 }
+
 
 .asiento,
 .asiento--conductor{
@@ -156,23 +163,40 @@ body {
 .top {
   background-color: rgb(230, 230, 230);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.322);
-  margin-right: 2rem;
   display: flex;
   justify-content: space-around;
   padding: 2rem 0;
+  flex-direction: column;
+
 }
+
+.top__top,
+.top__bottom {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+
+}
+
+.top__top {
+  justify-content: space-between;
+}
+
 
 .seats__container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
+
 }
 
 .seats__left,
 .seats__right {
   display: flex;
   flex-direction: row;
+
 
 }
 
@@ -192,3 +216,32 @@ body {
   margin-left: 2rem;
 }
 
+.enter {
+  font-size: 2rem;
+  background-color: #662f8f;
+  color: white;
+  padding: 1rem 4rem;
+  border-radius: 100rem;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.219);
+  transition: all .2s ease;
+  border: none;
+}
+
+.enter:hover {
+  transform: scale(1.05) translateY(-.2rem);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.459);
+}
+
+.leyenda {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  width: 20rem;
+  background-color:#64c8ee;
+  border-radius: 10px;
+  padding-left: 1rem;
+  color: #662f8f;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.300);
+
+
+}

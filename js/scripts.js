@@ -3,6 +3,7 @@ const porcentaje = document.getElementById("porcentaje");
 const distancia = document.getElementById("distancia");
 const asientosTotales = 35;
 const btnEnter = document.querySelector(".enter");
+const area = document.querySelector("#area");
 
 
 
@@ -12,6 +13,7 @@ btnEnter.addEventListener("click", function(){
     });
     capacidad = getCapacidad();
     dMin = getDistancia();
+    let persons = document.getElementById("persons").textContent=capacidad;
     solucion(capacidad,dMin)
 });
 
@@ -80,7 +82,7 @@ function solucion(){
     }
     
     if (cont < capacidad){
-        alert("no se pudo")
+        alert("No es Posible")
     } else {
         for (let i = 0; i < asientos.length; i++) {
             console.log(asientos[i])

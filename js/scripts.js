@@ -66,7 +66,8 @@ function solucion(){
                 0,-65,-130,-195,-260,-325,-390,-520]
     let asientos = []
     asientos.push(0);
-    let cont = 1;
+    asientos.push(34);
+    let cont = 2;
     let xInicio = xPos[0];
     let yInicio = yPos[0];
     while (cont < capacidad) {

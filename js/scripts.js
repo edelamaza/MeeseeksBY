@@ -82,7 +82,7 @@ function solucion(){
     }
     
     if (cont < capacidad){
-        alert("No es Posible")
+        let persons = document.getElementById("persons").textContent="limit exceded";
     } else {
         for (let i = 0; i < asientos.length; i++) {
             console.log(asientos[i])

@@ -23,7 +23,7 @@ btnEnter.addEventListener("click", function(){
     asientoY = getAsientoY();
     pasilloX = getPasilloX();
 
-    solucion(capacidad,dMin,discCheck,asientoX,asientoY,passilloX)
+    solucion(capacidad,dMin,discCheck,asientoX,asientoY,pasilloX)
 });
 
 function getCapacidad(){
@@ -63,7 +63,7 @@ function busquedaAsiento(xInicio,yInicio,xPos,yPos,asientos,dMin) {
     let nuevoAsiento=0;
     for (let i = 0; i < xPos.length; i++) {
         let distancia = Math.sqrt((Math.pow(xInicio-xPos[i],2)) + (Math.pow(yInicio-yPos[i],2)));
-        if (distancia>dMax && !(i in asientos) && distancia>=dMin){
+        if (distancia>=dMax && !(i in asientos) && distancia>=dMin){
             let contP=0;
             asientos.forEach(j => {
                 d = Math.sqrt((Math.pow(xPos[i]-xPos[j],2)) + (Math.pow(yPos[i]-yPos[j],2)));
@@ -77,7 +77,6 @@ function busquedaAsiento(xInicio,yInicio,xPos,yPos,asientos,dMin) {
             }
         }
     }
-
     return nuevoAsiento
 }
 
@@ -123,7 +122,7 @@ function solucion(capacidad, dMin, checked,asientoX,asientoY,pasilloX){
             if (seat[asientos[i]].id == asientos[i]){
                 seat[asientos[i]].classList.remove("deleted");
             }
-            }
+        }
         }
     }
 
